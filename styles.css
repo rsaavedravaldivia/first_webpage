@@ -1,0 +1,165 @@
+/* base styles */
+body {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=100");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 0px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+
+  animation: fade-in 1s;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+}
+
+.link-item {
+  margin-right: 25px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.5s;
+  display: inline-block;
+}
+
+.link:hover {
+  color: rgba(200, 255, 255, 1);
+  transform: scale(1.05);
+}
+
+/* main */
+
+.main {
+  text-align: center;
+
+  margin-top: 5px;
+  animation: fade-in 0.8s 0.4s backwards;
+}
+
+.h1heading {
+  font-size: 64px;
+  font-weight: 750;
+  margin-bottom: 25px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0.9;
+}
+
+.text {
+  font-size: 24px;
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 25px;
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  padding: 0px;
+  padding-left: 10px;
+  border-radius: 6px;
+  opacity: 0.8;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.4s;
+}
+.input:focus {
+  opacity: 1;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.button {
+  border: none;
+  padding: 0px;
+
+  background-color: black;
+  color: white;
+
+  border-radius: 6px;
+  width: 80px;
+  height: 30px;
+  font-family: inherit;
+  margin-left: 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #161616;
+  transition: 0.4s;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: auto;
+  font-size: 12px;
+  padding-top: 10px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+  margin-right: 10px;
+  animation: fade-in 0.5s 0.2s backwards;
+}
+
+.copyright {
+}
+
+.stats {
+}
